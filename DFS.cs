@@ -40,7 +40,7 @@ namespace DepthFirst // karena gw gabisa ngecek langsung cara kerjanya dengan co
  
         public class DepthFirstAlgorithm
         {
-            public File BuildFileGraph() //File BuildFileGraph? ini kayaknya test dummy. Mungkin harus bikin yang search ke directory.
+          /*  public File BuildFileGraph() //File BuildFileGraph? ini kayaknya test dummy. Mungkin harus bikin yang search ke directory.
             {
                 File Aaron = new File("Aaron");
                 File Betty = new File("Betty");
@@ -58,7 +58,7 @@ namespace DepthFirst // karena gw gabisa ngecek langsung cara kerjanya dengan co
                 Brian.isUnder(Derek);
  
                 return Aaron;
-            } 
+            } */
  
             //http://en.wikipedia.org/wiki/Breadth-first_search#Pseudocode
             public File Search(File root, string nameToSearchFor) //File root, string nameToSearchFor
@@ -116,8 +116,51 @@ namespace DepthFirst // karena gw gabisa ngecek langsung cara kerjanya dengan co
                 }
             }
         }
+		
+		void MakeStack(Stack s) // membuat Stack kosong, top(s) diisi 0
+		{
+			Stack s = new Stack[];
+		}
+		
+		void AddStack(Stack s, int v) // memasukkan v ke dalam stack S pada posisi belakang
+		{ 
+			int temp; // temporary untuk prosedur add
+			foreach (int v in s)
+			s.Push()
+		}
+		
+		void DeleteStack(Stack s, int v) // menghapus v dari top(s)
+		{ 
+			int temp; // temporary untuk prosedur delete
+			foreach (int v in s)
+				Console.WriteLine(c + " ");				
+		}
+		
+		bool IsEmpty(Stack s) // TRUE jika kosong dan FALSE jika sebaliknya
+		{ 
+			if Stack[size] == 0
+			{
+				return true;
+			} 
+			else 
+				{
+					return false;
+				}
+		}
+		
+		
+		private int w; // simpul yang dikunjungi
+		private int v; // simpul awal kunjungan
+		private struct int 
+		{
+			int top;
+			int size;
+		} Stack; // tipe bentukan Stack
+		private Stack s; // Stack
+		private bool[] dikunjungi = new bool[s.size]; 
+  }
  
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             DepthFirst d = new DepthFirst();
             File root = d.BuildFileGraph();
@@ -129,6 +172,6 @@ namespace DepthFirst // karena gw gabisa ngecek langsung cara kerjanya dengan co
             Console.WriteLine(f == null ? "Person not found" : f.name);
             f = d.Search(root, "Alex");
             Console.WriteLine(f == null ? "Person not found" : f.name);
-        }
+        } */
     }
 }
